@@ -9,7 +9,6 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
-  
 </head>
 
 <body class="bg-dark">
@@ -24,25 +23,38 @@
       </div>
     </div>
 
+    <div id="detallesPelicula" class="container my-3 bg-secondary text-white p-3 rounded d-none">
+      <h3 id="tituloDetalle"></h3>
+      <p id="overviewDetalle"></p>
+      <ul id="generosDetalle" class="list-unstyled"></ul>
+      <div class="dropdown my-3">
+        <button class="btn btn-info dropdown-toggle" type="button" id="dropdownDetalles" data-bs-toggle="dropdown" aria-expanded="false">
+          Más detalles
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownDetalles">
+          <li><span>Año de lanzamiento: </span><span id="lanzamientoDetalle"></span></li>
+          <li><span>Duración: </span><span id="duracionDetalle"></span> minutos</li>
+          <li><span>Presupuesto: </span><span id="presupuestoDetalle"></span> USD</li>
+          <li><span>Ganancias: </span><span id="gananciasDetalle"></span> USD</li>
+        </ul>
+      </div>
+    </div>
+
     <div class="album">
-      <ul class="list-group container" id="lista">
-      </ul>
+      <ul class="list-group container" id="lista"></ul>
     </div>
   </main>
 
   <footer class="text-muted py-3">
     <div class="container">
-      <p class="float-end mb-1">
-        <a href="#">Volver arriba</a>
-      </p>
-      <p class="mb-1">Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">
-          Jovenes a Programar</a>.
+      <p class="float-end mb-1"><a href="#">Volver arriba</a></p>
+      <p class="mb-1">Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jóvenes a Programar</a>.</p>
       <p class="mb-1">Generado con fines estrictamente educativos.</p>
     </div>
   </footer>
 
+  <script src="js/script.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
-
 </body>
 
 </html>
